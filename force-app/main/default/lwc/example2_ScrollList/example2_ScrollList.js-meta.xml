@@ -3,7 +3,7 @@
     <masterLabel>Example 2 Scroll List</masterLabel>
     <description>Bad Scrolling</description>
     <apiVersion>48.0</apiVersion>
-    <isExposed>false</isExposed>
+    <isExposed>true</isExposed>
     <targets>
         <target>lightning__AppPage</target>
         <target>lightning__HomePage</target>
