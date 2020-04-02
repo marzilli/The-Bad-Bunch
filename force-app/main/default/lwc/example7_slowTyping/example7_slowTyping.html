@@ -1,0 +1,37 @@
+<template>
+    <div
+        class="slds-text-heading_large slds-text-align_center slds-m-vertical_xx-large"
+    >
+        <div class="input-wrapper">
+            <h2>Input #1</h2>
+            <label>
+                <span>Type here:</span>
+                <input
+                    class="slow-typing slds-p-around_small slds-p-vertical_xxx-small"
+                    type="text"
+                    placeholder="Type some text"
+                    oninput={onSlowInput}
+                />
+            </label>
+            <div class="characters slow">
+                Characters: {numCharsSlow}
+            </div>
+        </div>
+        <div class="input-wrapper">
+            <h2>Input #2</h2>
+            <label>
+                <span>Type here:</span>
+                <input
+                    class="fast-typing slds-p-around_small slds-p-vertical_xxx-small"
+                    type="text"
+                    placeholder="Type some text"
+                    oninput={onFastInput}
+                />
+            </label>
+            <div class="characters fast">
+                Characters: {numCharsFast}
+            </div>
+        </div>
+        <div class="thrashy" lwc:dom="manual"></div>
+    </div>
+</template>
