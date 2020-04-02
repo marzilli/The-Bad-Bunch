@@ -12,6 +12,7 @@
     <label>Bad Bunch</label>
     <navType>Standard</navType>
     <tabs>standard-home</tabs>
+    <tabs>Bad_Bunch_1_Loop</tabs>
     <tabs>Bad_Bunch_2_Scroll_List</tabs>
     <tabs>Bad_Bunch_3_Increase_Numbers</tabs>
     <uiType>Lightning</uiType>

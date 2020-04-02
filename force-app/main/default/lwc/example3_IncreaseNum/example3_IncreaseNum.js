@@ -1,13 +1,12 @@
+/* eslint-disable no-console */
+
 import { LightningElement,track,api } from 'lwc';
 
-import apex_generateRecords from '@salesforce/apex/BadBunchController.generateRecords';
+// import apex_generateRecords from '@salesforce/apex/BadBunchController.generateRecords';
 import apex_generateJSONRecords from '@salesforce/apex/BadBunchController.generateJSONRecords';
 
-/**
- * Default message to provide
- * @type {String}
- */
-const ERROR_DEFAULT = 'An error occurred';
+const MIN_NUM_RECORDS = 5000;
+const MAX_NUM_RECORDS = 10000;
 
 export default class Example3_IncreaseNum extends LightningElement {
   @track numberCount;
@@ -50,8 +49,8 @@ export default class Example3_IncreaseNum extends LightningElement {
     let resultPromise;
 
     try {
-      const size = this.generateRandomNumber(5000, 10000);
-      const startTime = new Date();
+      const size = this.generateRandomNumber(MIN_NUM_RECORDS, MAX_NUM_RECORDS);
+      const start = performance.now();
 
       const results = await apex_generateJSONRecords({size});
       const list = await JSON.parse(results);
@@ -63,12 +62,11 @@ export default class Example3_IncreaseNum extends LightningElement {
       // await fetch(`api/v1/wait/${this.generateRandomNumber(5000, 10000)}` );
       // return (await responseData.json()).length;
 
-      const endTime = new Date();
-      const duration = endTime.getTime() - startTime.getTime();
+      const end = performance.now();
+      const duration = (end - start).toFixed();
 
       resultPromise = Promise.resolve(duration);
     } catch (error) {
-      console.debug;
       console.error(JSON.stringify(error));
       this.error = error;
 

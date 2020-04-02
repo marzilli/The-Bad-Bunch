@@ -1,10 +1,37 @@
 <template>
-    <lightning-card>
-    <div class="slds-m-left_medium slds-m-top_small slds-m-bottom_medium ">   
-        <lightning-button variant="destructive" label="Do Something" title="Do Something" onclick={runExpensiveLoop} class="slds-m-left_x-small"></lightning-button>
-        <br />  <span class="slds-m-left_medium slds-text-body_regular"> {resultExpensiveLoop} </span> <br /><br />
-        <lightning-button variant="brand" label="Do Something Faster" title="Primary action" onclick={runOptimalLoop} class="slds-m-left_x-small"></lightning-button>
-        <br />  <span class="slds-m-left_medium slds-text-body_regular"> {resultOptimalLoop} </span>
-    </div>
-</lightning-card>
+    <lightning-layout horizontal-align="center">
+        <lightning-layout-item>
+            <div class="slds-box slds-theme_default">
+                <c-error-notification
+                    if:true={error} error={error}
+                ></c-error-notification>
+                <div class="">
+                    <div class='slds-m-around_small'>
+                        <button
+                            class="slds-button slds-button_brand button slds-button_destructive"
+                            onclick={runExpensiveLoop}
+                            disabled={areButtonsDisabled}
+                        >
+                            Run expensive loop
+                        </button>
+                    </div>
+                    <div class='slds-m-around_small slds-text-body_regular'>
+                        {resultExpensiveLoop}
+                    </div>
+                    <div class='slds-m-around_small'>
+                        <button
+                            class="slds-button slds-button_brand button"
+                            onclick={runOptimalLoop}
+                            disabled={areButtonsDisabled}
+                        >
+                            Run Optimal loop
+                        </button>
+                    </div>
+                    <div class='slds-m-around_small slds-text-body_regular'>
+                        {resultOptimalLoop}
+                    </div>
+                </div>
+            </div>
+        </lightning-layout-item>
+    </lightning-layout>
 </template>

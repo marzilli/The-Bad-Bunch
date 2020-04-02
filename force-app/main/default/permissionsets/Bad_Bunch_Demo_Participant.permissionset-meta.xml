@@ -7,6 +7,10 @@
     <hasActivationRequired>false</hasActivationRequired>
     <label>Bad Bunch Demo Participant</label>
     <tabSettings>
+        <tab>Bad_Bunch_1_Loop</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
         <tab>Bad_Bunch_2_Scroll_List</tab>
         <visibility>Visible</visibility>
     </tabSettings>
