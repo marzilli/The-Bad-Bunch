@@ -8,6 +8,10 @@
 # Salesforce cache
 .sfdx/
 .localdevserver/
+**/Security.settings*
+
+# Salesforce Profiles
+*.profile*
 
 # LWC VSCode autocomplete
 **/lwc/jsconfig.json

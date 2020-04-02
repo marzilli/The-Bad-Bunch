@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPage>Bad_Bunch_3_Increase_Numbers</flexiPage>
+    <label>Bad Bunch 3: Increase Numbers</label>
+    <motif>Custom86: Red Cross</motif>
+</CustomTab>
