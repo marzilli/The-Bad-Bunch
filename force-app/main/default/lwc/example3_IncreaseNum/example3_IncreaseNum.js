@@ -36,7 +36,7 @@ export default class Example3_IncreaseNum extends LightningElement {
           const responseData = await fetch(`api/v1/wait/${this.generateRandomNumber(5000, 10000)}` );
           return (await responseData.json()).waitTime;
         } catch (error) {
-            console.debug(error.message);
+            console.debug(`Error: ${error.message}`);
         }
     
         return Promise.resolve();
