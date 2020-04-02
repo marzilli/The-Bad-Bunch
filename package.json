@@ -15,6 +15,7 @@
     "test:apex": "sfdx force:apex:test:run -w 10",
     "test:apex:synchronous": "npm run test:apex --silent -- -y",
     "log": "sfdx force:apex:log:tail | less -O ./.tmp/apexLog.log +F",
+    "lwc": "sfdx force:lightning:lwc:start",
     "verify": "npm run test --silent && npm run lint --silent && npm run test --silent",
     "verify:run": "echo \"\\\\n\\\\n\\\\n--- Running Verification Steps ---\\\\n\\\\n\\\\n\"",
     "prettier": "prettier --write \"**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}\"",
