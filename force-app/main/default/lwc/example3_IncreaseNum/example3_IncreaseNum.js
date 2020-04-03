@@ -2,11 +2,10 @@
 
 import { LightningElement,track,api } from 'lwc';
 
-// import apex_generateRecords from '@salesforce/apex/BadBunchController.generateRecords';
 import apex_generateJSONRecords from '@salesforce/apex/BadBunchController.generateJSONRecords';
 
-const MIN_NUM_RECORDS = 5000;
-const MAX_NUM_RECORDS = 10000;
+const MIN_NUM_RECORDS = 15000;
+const MAX_NUM_RECORDS = 50000;
 
 export default class Example3_IncreaseNum extends LightningElement {
   @track numberCount;
@@ -21,21 +20,15 @@ export default class Example3_IncreaseNum extends LightningElement {
 
   async increaseNum(event) {
     event.stopPropagation();
-
-    this.error = null;
-
-    this.resultWaitTime = '';
     this.isFetching = true;
     this.buttonIsDisabled = true;
-
     const waitTime = await this.longAsyncFetch();
-
     this.isFetching = false;
     this.buttonIsDisabled = false;
     
     if (waitTime) {
       this.totalWaitTime += waitTime;
-      this.resultWaitTime = ` You just waited for ~${waitTime} ( ~${this.totalWaitTime} in total)`;
+      this.resultWaitTime = ` You just waited for ~${waitTime} seconds ( ~${this.totalWaitTime} in total)`;
     }
 
     this.numberCount++;
@@ -57,22 +50,16 @@ export default class Example3_IncreaseNum extends LightningElement {
 
       // eslint-disable-next-line no-console
       console.log(`do something with ${list.length} records...`);
-      
-      // const responseData = await apex_generateRecords(size);
-      // await fetch(`api/v1/wait/${this.generateRandomNumber(5000, 10000)}` );
-      // return (await responseData.json()).length;
-
+ 
       const end = performance.now();
-      const duration = (end - start).toFixed();
+      const duration = Math.floor(((end - start).toFixed())/1000);
 
       resultPromise = Promise.resolve(duration);
     } catch (error) {
       console.error(JSON.stringify(error));
       this.error = error;
-
       resultPromise = Promise.reject(error);
     }
-
     return resultPromise;
   }
 }

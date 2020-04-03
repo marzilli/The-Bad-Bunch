@@ -28,6 +28,23 @@ public with sharing class BadBunchController {
     public static String generateJSONRecords(Integer size) {
         Account[] accounts = generateRecords(size);
         String results = JSON.serialize(accounts);
+        runDescribe();
         return results;
+    }
+
+    @auraEnabled(cacheable=false)
+    public static List<String> runDescribe(){
+        Map<String, Schema.SObjectType> gd = Schema.getGlobalDescribe(); 
+        Set<String> objs = new Set<String>();
+        for(Schema.SObjectType d : gd.values())
+        {
+            Schema.DescribeSObjectResult ds = d.getDescribe();
+            if(!ds.isCreateable())
+            continue;
+            objs.add(ds.getName());
+        }
+        List<String> sortedNames = new List<String>(objs);
+        sortedNames.sort();
+        return sortedNames;
     }
 }
