@@ -4,7 +4,7 @@ function randomInt(int) {
   return Math.floor(Math.random() * int);
 }
 
-export default class Example7_slowTyping extends LightningElement {
+export default class Example4_Input extends LightningElement {
   @track numCharsSlow = 0;
   @track numCharsFast = 0;
   runningDebounce = false;
