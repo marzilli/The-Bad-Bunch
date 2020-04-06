@@ -4,8 +4,8 @@ import { LightningElement,track,api } from 'lwc';
 
 import apex_generateJSONRecords from '@salesforce/apex/BadBunchController.generateJSONRecords';
 
-const MIN_NUM_RECORDS = 15000;
-const MAX_NUM_RECORDS = 50000;
+const MIN_NUM_RECORDS = 25000;
+const MAX_NUM_RECORDS = 75000;
 
 export default class Example3_IncreaseNum extends LightningElement {
   @track numberCount;
