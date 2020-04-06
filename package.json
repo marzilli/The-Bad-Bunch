@@ -18,7 +18,8 @@
     "verify": "npm run test --silent && npm run lint --silent && npm run test --silent",
     "verify:run": "echo \"\\\\n\\\\n\\\\n--- Running Verification Steps ---\\\\n\\\\n\\\\n\"",
     "prettier": "prettier --write \"**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}\"",
-    "prettier:verify": "prettier --list-different \"**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}\""
+    "prettier:verify": "prettier --list-different \"**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}\"",
+    "lwc": "sfdx force:lightning:lwc:start"
   },
   "devDependencies": {
     "@prettier/plugin-xml": "^0.7.0",
