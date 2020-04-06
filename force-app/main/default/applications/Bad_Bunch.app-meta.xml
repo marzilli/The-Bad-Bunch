@@ -14,6 +14,8 @@
     <tabs>standard-home</tabs>
     <tabs>Bad_Bunch_2_Scroll_List</tabs>
     <tabs>Bad_Bunch_3_Increase_Numbers</tabs>
+    <tabs>Bad_Bunch_4_Input_Fields</tabs>
+    <tabs>Bad_Bunch_5_Table</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Bad_Bunch_UtilityBar</utilityBar>
 </CustomApplication>
