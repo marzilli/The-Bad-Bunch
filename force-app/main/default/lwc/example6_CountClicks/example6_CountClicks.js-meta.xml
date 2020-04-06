@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
-    <masterLabel>Example 65 Count Clicks</masterLabel>
+    <masterLabel>Example 6: Count Clicks</masterLabel>
     <description>Look mom I can count</description>
     <apiVersion>48.0</apiVersion>
     <isExposed>true</isExposed>
