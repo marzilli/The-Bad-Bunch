@@ -3,7 +3,7 @@ import { LightningElement, track } from 'lwc';
 export default class Example5_Table extends LightningElement {       
     totalRows = 200;
     cellsInRow = 10;
-    totalDivs = 100;
+    totalDivs = 25;
     border = "1px solid #000";
     padding ="10px";
 
