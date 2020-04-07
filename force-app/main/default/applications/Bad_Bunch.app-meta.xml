@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <content>Bad_Bunch_Home</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+    </actionOverrides>
     <brand>
         <headerColor>#AB1714</headerColor>
         <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
@@ -16,6 +24,7 @@
     <tabs>Bad_Bunch_3_Increase_Numbers</tabs>
     <tabs>Bad_Bunch_4_Input_Fields</tabs>
     <tabs>Bad_Bunch_5_Table</tabs>
+    <tabs>Bad_Bunch_6_Count_Clicks</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Bad_Bunch_UtilityBar</utilityBar>
 </CustomApplication>

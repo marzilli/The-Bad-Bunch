@@ -13,7 +13,7 @@ public with sharing class BadBunchController {
 
         for (Integer i = 0; i < size; i++ ){
             results.add(new Account(
-                name = 'Account_' + i
+                name = 'Account_' + i + Integer.valueof((Math.random() * 10))
             ));
         }
 

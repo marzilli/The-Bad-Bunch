@@ -14,4 +14,12 @@
         <tab>Bad_Bunch_3_Increase_Numbers</tab>
         <visibility>Visible</visibility>
     </tabSettings>
+    <tabSettings>
+        <tab>Bad_Bunch_5_Table</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>Bad_Bunch_6_Count_Clicks</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
 </PermissionSet>

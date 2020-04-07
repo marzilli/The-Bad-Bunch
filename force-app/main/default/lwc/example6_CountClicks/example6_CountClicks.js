@@ -37,7 +37,7 @@ export default class Example6_CountClicks extends LightningElement {
       color = 'red';
     } else if (this.numberOfClicks < 5000) {
       color = 'darkred';
-    } else if (this.numberOfClicks < 50000) {
+    } else if (this.numberOfClicks < 20000) {
       color = 'purple'
     } else {
       // bwa ha ha ha!
