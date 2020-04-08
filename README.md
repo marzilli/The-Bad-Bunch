@@ -1,6 +1,6 @@
 # The Bad Bunch
 
-This one bad bunch of Lightning Web Compoments used to enable developers and architechs on how to optimize Ligthning Performance using Chrome Developer Tools.
+This one Bad Bunch of Lightning Web Compoments used to enable developers and architechs on how to optimize Ligthning Performance using Chrome Developer Tools. All of these compoments implement *Worst Practices* to educate people who need to troubleshoot Lightning Compoment Peformance.
 
 NAME        VALUE
 ──────────  ──────────────────
