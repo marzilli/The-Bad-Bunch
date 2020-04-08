@@ -54,6 +54,6 @@ export default class Example6_CountClicks extends LightningElement {
         timeStr: `${new Date().getTime()}`
       }
     });
-    this.template.dispatchEvent(evt);
+    this.dispatchEvent(evt);
   }
 }
