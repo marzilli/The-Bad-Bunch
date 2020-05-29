@@ -1,6 +1,6 @@
 # The Bad Bunch
 
-This  Bad Bunch of Lightning Web Compoments used to enable developers and architechs on how to troubleshoot Ligthning Performance using Chrome's built in Developer Tools. All of these compoments implement *Worst Practices* to educate people who want to troubleshoot Lightning Compoment Peformance.
+This  Bad Bunch of Lightning Web Compoments is used to enable developers and architechs on how to troubleshoot Ligthning Performance using Chrome's built in Developer Tools. All of these compoments implement *Worst Practices* to educate people who want to troubleshoot Lightning Compoment Peformance.
 
 *WARNING*: This package is for training purposes ONLY. Do not install this in any production org.  It is recommended you use a developer org or Trailhead Playground.
 
