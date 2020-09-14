@@ -11,6 +11,3 @@ This package contians a Bad Bunch of Lightning Web Components  used to enable de
 Ok you have been warned...
 
 Installation URL: https://login.salesforce.com/packaging/installPackage.apexp?p0=04t3h000002FgoUAAS
-
-Package Id  0Ho3h000000Kyq3CAC
-
